@@ -1,0 +1,18 @@
+Source: rn1host
+Section: misc
+Priority: optional
+Maintainer: Fabian Fagerholm <fabbe@paniq.net>
+Build-Depends: debhelper (>= 10),
+	       meson (>= 0.45),
+Standards-Version: 4.1.2
+Homepage: https://www.pulurobotics.fi/
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/rn1host.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/rn1host.git
+
+Package: rn1host
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Host process for Pulurobot
+ This package provides the host process for the Pulurobot.
+ .
+ The rn1host process runs on the main Raspberry Pi board of the robot.
